@@ -22,11 +22,17 @@
 
 ## 開催日
 
-* hoge
-* piyo
-* fuga
+* 立ち上がりは、隔週くらい
+* 呉の忙しい時期：1月中
+* 滑川の忙しい時期：4月10日～5月20日が休日がないから、お昼休み中はいける
+* 小松の忙しい時期：4月～くらい
+* 次回12/31(年末年始なのでリスケあるかも）
+* 1月中旬に第三回実施予定
+* 曜日の希望(土曜メイン）
 
 ## 現在実施しているもの
 
 * Titanic
-* https://www.kaggle.com/c/titanic
+  * https://www.kaggle.com/c/titanic
+* Pythonで始めるKaggleスタートブック
+  * https://www.amazon.co.jp/dp/B088R992TJ/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
