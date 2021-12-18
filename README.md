@@ -17,3 +17,8 @@
 * hoge
 * piyo
 * fuga
+
+## 現在実施しているもの
+
+* Titanic
+* https://www.kaggle.com/c/titanic
