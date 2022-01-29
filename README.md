@@ -36,3 +36,8 @@
   * https://www.kaggle.com/c/titanic
 * Pythonで始めるKaggleスタートブック
   * https://www.amazon.co.jp/dp/B088R992TJ/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
+
+## 0129メモ
+
+* KaggleAPIを使用し、Submitとデータのダウンロードをした
+* 次回は、情報量エンジニアリング（テキストのセクション2.2以降）の想定
