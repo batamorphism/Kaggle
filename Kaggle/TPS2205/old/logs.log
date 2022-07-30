@@ -1,0 +1,229 @@
+2022-05-03 10:44:01,449:INFO:PyCaret Supervised Module
+2022-05-03 10:44:01,450:INFO:ML Usecase: classification
+2022-05-03 10:44:01,450:INFO:version 2.3.10
+2022-05-03 10:44:01,450:INFO:Initializing setup()
+2022-05-03 10:44:01,451:INFO:setup(target=default, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=simple, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=True, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=True, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=['LIMIT_BAL', 'AGE'], remove_outliers=False, outliers_threshold=0.05, remove_multicollinearity=True, multicollinearity_threshold=0.95, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=[['BILL_AMT1', 'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6'], ['PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6']], group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=123, log_experiment=True, experiment_name=credit1, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-05-03 10:44:01,452:INFO:Checking environment
+2022-05-03 10:44:01,452:INFO:python_version: 3.8.13
+2022-05-03 10:44:01,452:INFO:python_build: ('default', 'Mar 28 2022 06:59:08')
+2022-05-03 10:44:01,452:INFO:machine: AMD64
+2022-05-03 10:44:01,452:INFO:platform: Windows-10-10.0.19044-SP0
+2022-05-03 10:44:01,453:INFO:Memory: svmem(total=16977203200, available=6387757056, percent=62.4, used=10589446144, free=6387757056)
+2022-05-03 10:44:01,453:INFO:Physical Core: 6
+2022-05-03 10:44:01,453:INFO:Logical Core: 12
+2022-05-03 10:44:01,453:INFO:Checking libraries
+2022-05-03 10:44:01,454:INFO:pd==1.4.2
+2022-05-03 10:44:01,454:INFO:numpy==1.20.3
+2022-05-03 10:44:01,454:INFO:sklearn==0.23.2
+2022-05-03 10:44:01,455:INFO:lightgbm==3.3.2
+2022-05-03 10:44:01,831:INFO:catboost==1.0.5
+2022-05-03 10:44:01,831:INFO:xgboost==1.6.0
+2022-05-03 10:44:01,831:INFO:mlflow==1.25.0
+2022-05-03 10:44:01,831:INFO:Checking Exceptions
+2022-05-03 10:44:01,832:INFO:Declaring global variables
+2022-05-03 10:44:01,832:INFO:USI: 4565
+2022-05-03 10:44:01,832:INFO:pycaret_globals: {'fold_groups_param_full', '_available_plots', 'logging_param', 'fold_param', 'fold_groups_param', 'imputation_regressor', 'iterative_imputation_iters_param', 'y_train', 'y', 'USI', '_ml_usecase', 'X', '_all_models_internal', 'seed', 'html_param', 'pycaret_globals', 'exp_name_log', 'X_test', 'target_param', 'fold_shuffle_param', 'stratify_param', '_all_models', 'prep_pipe', 'transform_target_method_param', 'create_model_container', 'y_test', 'gpu_param', 'log_plots_param', 'transform_target_param', 'data_before_preprocess', 'display_container', 'fix_imbalance_param', 'experiment__', 'fix_imbalance_method_param', 'fold_generator', 'master_model_container', 'X_train', 'imputation_classifier', 'n_jobs_param', 'dashboard_logger', '_all_metrics', '_internal_pipeline', '_gpu_n_jobs_param'}
+2022-05-03 10:44:01,832:INFO:Preparing display monitor
+2022-05-03 10:44:01,832:INFO:Preparing display monitor
+2022-05-03 10:44:01,864:INFO:Importing libraries
+2022-05-03 10:44:01,864:INFO:Copying data for preprocessing
+2022-05-03 10:44:01,883:INFO:Declaring preprocessing parameters
+2022-05-03 10:44:01,890:INFO:Creating preprocessing pipeline
+2022-05-03 10:44:02,053:INFO:Preprocessing pipeline created successfully
+2022-05-03 10:44:02,053:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-05-03 10:44:02,054:INFO:Creating global containers
+2022-05-03 10:44:02,058:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-05-03 10:45:45,727:INFO:Creating grid variables
+2022-05-03 10:45:45,752:INFO:Logging experiment in MLFlow
+2022-05-03 10:45:46,583:INFO:SubProcess save_model() called ==================================
+2022-05-03 10:45:46,629:INFO:Initializing save_model()
+2022-05-03 10:45:46,629:INFO:save_model(model=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='default',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_stra...
+                ('dummy', Dummify(target='default')),
+                ('fix_perfect', Remove_100(target='default')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'),
+                ('fix_multi',
+                 Fix_multicollinearity(correlation_with_target_preference=None,
+                                       correlation_with_target_threshold=0.0,
+                                       target_variable='default',
+                                       threshold=0.95)),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False), model_name=Transformation Pipeline, prep_pipe_=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='default',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_stra...
+                ('dummy', Dummify(target='default')),
+                ('fix_perfect', Remove_100(target='default')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'),
+                ('fix_multi',
+                 Fix_multicollinearity(correlation_with_target_preference=None,
+                                       correlation_with_target_threshold=0.0,
+                                       target_variable='default',
+                                       threshold=0.95)),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False), verbose=False, kwargs={})
+2022-05-03 10:45:46,629:INFO:Adding model into prep_pipe
+2022-05-03 10:45:46,636:WARNING:Only Model saved as it was a pipeline.
+2022-05-03 10:45:46,710:INFO:Transformation Pipeline.pkl saved in current working directory
+2022-05-03 10:45:46,730:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='default',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_stra...
+                ('dummy', Dummify(target='default')),
+                ('fix_perfect', Remove_100(target='default')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'),
+                ('fix_multi',
+                 Fix_multicollinearity(correlation_with_target_preference=None,
+                                       correlation_with_target_threshold=0.0,
+                                       target_variable='default',
+                                       threshold=0.95)),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False)
+2022-05-03 10:45:46,730:INFO:save_model() successfully completed......................................
+2022-05-03 10:45:46,965:INFO:SubProcess save_model() end ==================================
+2022-05-03 10:45:47,293:INFO:create_model_container: 0
+2022-05-03 10:45:47,293:INFO:master_model_container: 0
+2022-05-03 10:45:47,293:INFO:display_container: 1
+2022-05-03 10:45:47,314:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='default',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_stra...
+                ('dummy', Dummify(target='default')),
+                ('fix_perfect', Remove_100(target='default')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'),
+                ('fix_multi',
+                 Fix_multicollinearity(correlation_with_target_preference=None,
+                                       correlation_with_target_threshold=0.0,
+                                       target_variable='default',
+                                       threshold=0.95)),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False)
+2022-05-03 10:45:47,314:INFO:setup() succesfully completed......................................
+2022-05-03 10:56:00,413:INFO:Initializing get_config()
+2022-05-03 10:56:00,413:INFO:get_config(variable=fold_generator)
+2022-05-03 10:56:00,414:INFO:Global variable: fold_generator returned as StratifiedKFold(n_splits=10, random_state=None, shuffle=False)
+2022-05-03 10:56:00,415:INFO:get_config() succesfully completed......................................
+2022-05-03 10:56:18,598:INFO:Initializing get_config()
+2022-05-03 10:56:18,599:INFO:get_config(variable=fold_generator)
+2022-05-03 10:56:18,600:INFO:Global variable: fold_generator returned as StratifiedKFold(n_splits=10, random_state=None, shuffle=False)
+2022-05-03 10:56:18,600:INFO:get_config() succesfully completed......................................
+2022-05-03 10:56:34,367:INFO:Initializing get_config()
+2022-05-03 10:56:34,368:INFO:get_config(variable=fold_generator)
+2022-05-03 10:56:34,368:INFO:Global variable: fold_generator returned as StratifiedKFold(n_splits=10, random_state=None, shuffle=False)
+2022-05-03 10:56:34,368:INFO:get_config() succesfully completed......................................
+2022-05-03 10:57:19,411:INFO:Initializing get_config()
+2022-05-03 10:57:19,412:INFO:get_config(variable=fold_generator)
+2022-05-03 10:57:19,412:INFO:Global variable: fold_generator returned as StratifiedKFold(n_splits=10, random_state=None, shuffle=False)
+2022-05-03 10:57:19,413:INFO:get_config() succesfully completed......................................
+2022-05-03 10:58:13,260:INFO:Initializing get_config()
+2022-05-03 10:58:13,261:INFO:get_config(variable=X)
+2022-05-03 10:58:13,289:INFO:Global variable: X returned as        BILL_AMT1  BILL_AMT2  BILL_AMT4  BILL_AMT5  BILL_AMT6  PAY_AMT1  \
+0       0.838229   0.693298   0.648977  -0.079798  -0.293975  0.430233   
+1      -1.135264  -1.144701  -1.132330  -1.075578  -0.883055 -1.272521   
+2       1.472993   1.524127   1.627445   1.666297   1.777309  0.901192   
+3      -0.383149  -0.297576  -0.175794  -0.072536  -0.154697 -0.408818   
+4       0.609290   0.682465   0.726984   0.819146   0.599423 -0.197895   
+...          ...        ...        ...        ...        ...       ...   
+22795  -0.546417  -0.586445  -1.058230  -1.097897  -0.867238 -0.735761   
+22796   0.342619   0.097291  -1.136906  -0.638666   2.190627 -0.413224   
+22797   1.522766   1.532791   1.067847   1.000178   1.536220 -1.272521   
+22798   0.849451   1.021460   0.237052  -1.122864  -0.883055  1.439611   
+22799   1.786341   1.775957   1.686964   1.726472   1.851001  1.075832   
+
+       PAY_AMT2  PAY_AMT3  PAY_AMT4  PAY_AMT5  ...  AGE_13.0  AGE_14.0  \
+0     -1.223059  2.141285 -1.107670 -1.105529  ...       0.0       0.0   
+1     -1.225890 -1.154262 -0.647005 -1.105529  ...       0.0       0.0   
+2      0.925247  0.829711  0.973942  0.966468  ...       0.0       0.0   
+3     -0.559653 -0.762038 -0.501092 -0.644956  ...       0.0       0.0   
+4      1.358374 -0.016061 -0.004314 -0.009564  ...       0.0       0.0   
+...         ...       ...       ...       ...  ...       ...       ...   
+22795 -0.049396 -1.154262 -0.856998 -0.856848  ...       0.0       0.0   
+22796  0.123261 -1.154262  1.480064  2.212264  ...       0.0       0.0   
+22797  0.705953  0.493279 -0.004314 -0.009564  ...       0.0       0.0   
+22798  1.988455  0.872655 -1.107670 -1.105529  ...       0.0       0.0   
+22799  1.257782  0.872655  1.775222  1.165849  ...       0.0       0.0   
+
+       AGE_2.0  AGE_3.0  AGE_4.0  AGE_5.0  AGE_6.0  AGE_7.0  AGE_8.0  AGE_9.0  
+0          0.0      0.0      0.0      0.0      1.0      0.0      0.0      0.0  
+1          0.0      0.0      0.0      0.0      0.0      0.0      1.0      0.0  
+2          0.0      0.0      1.0      0.0      0.0      0.0      0.0      0.0  
+3          1.0      0.0      0.0      0.0      0.0      0.0      0.0      0.0  
+4          0.0      1.0      0.0      0.0      0.0      0.0      0.0      0.0  
+...        ...      ...      ...      ...      ...      ...      ...      ...  
+22795      0.0      0.0      0.0      0.0      0.0      0.0      0.0      1.0  
+22796      0.0      1.0      0.0      0.0      0.0      0.0      0.0      0.0  
+22797      0.0      0.0      0.0      0.0      0.0      0.0      1.0      0.0  
+22798      0.0      0.0      0.0      0.0      0.0      0.0      0.0      1.0  
+22799      0.0      1.0      0.0      0.0      0.0      0.0      0.0      0.0  
+
+[22800 rows x 116 columns]
+2022-05-03 10:58:13,289:INFO:get_config() succesfully completed......................................
+2022-05-03 10:58:13,289:INFO:Initializing get_config()
+2022-05-03 10:58:13,289:INFO:get_config(variable=y)
+2022-05-03 10:58:13,295:INFO:Global variable: y returned as 0        0
+1        0
+2        0
+3        0
+4        0
+        ..
+22795    0
+22796    0
+22797    0
+22798    0
+22799    0
+Name: default, Length: 22800, dtype: int64
+2022-05-03 10:58:13,295:INFO:get_config() succesfully completed......................................
+2022-05-03 10:58:39,688:INFO:Initializing get_config()
+2022-05-03 10:58:39,690:INFO:get_config(variable=fold_groups_param)
+2022-05-03 10:58:39,690:INFO:Global variable: fold_groups_param returned as None
+2022-05-03 10:58:39,690:INFO:get_config() succesfully completed......................................
+2022-05-03 10:58:45,359:INFO:Initializing get_config()
+2022-05-03 10:58:45,359:INFO:get_config(variable=fold_groups_param)
+2022-05-03 10:58:45,359:INFO:Global variable: fold_groups_param returned as None
+2022-05-03 10:58:45,360:INFO:get_config() succesfully completed......................................
+2022-05-03 10:58:53,879:INFO:Initializing get_config()
+2022-05-03 10:58:53,880:INFO:get_config(variable=fold_param)
+2022-05-03 10:58:53,880:INFO:Global variable: fold_param returned as 10
+2022-05-03 10:58:53,880:INFO:get_config() succesfully completed......................................
